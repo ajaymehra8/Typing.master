@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Type Test</title>
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+<!--   bootstrap svg icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<!--   font-style link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  </head>
+<body>
+
+<!--   Home-Page -->
+  <div class="first-view">
+  <h1 class="first-text">Welcome To Typing Test.</h1>
+     <img class="first-img"src="https://techcrunch.com/wp-content/uploads/2021/02/keyboard.jpg" alt="">
+    <br>
+ <i class="bi bi-stopwatch-fill time-icon"></i>
+         <!--Selection of Timer-->                                     
+    <select class="timer" name="minutes" id="minutes" > 
+                                                <option value="1" onclick="oneMin()">1 Minute Test</option>
+                                                <option value="2" onclick="twoMin()" class="two">2 Minutes Test</option>
+                                                <option value="3" onclick="threeMin()">3 Minutes Test</option>
+                                                <option value="5" onclick="fiveMin()">5 Minutes Test</option>
+                                               
+                                            </select>
+    <br>
+    <button class="first-button">Start</button>
+      </div>
+<!--     typing surface -->
+<!--         Back button -->
+    <div class="second-Main">
+    <span class="back"> <button class="reset" onclick="reset()">Back</button></span>
+<!--     Timer Container -->
+    <div class="container">
+    <div class="time">
+      <span class="t2">
+      <span class="digit " id="minute">00 :</span>         
+        
+        </span>
+      <span class="t1">
+      <span class="digit " id="second">00</span>
+    
+      </span>
+    </div>
+  </div>
+
+    <div class="writing">
+    <p class="box-text" id="pText"></p>
+    <textarea class="box" placeholder="Start typing" ></textarea>
+      </div>
+</div>
+ 
+
+<!--     Result Section -->
+    <div class="wpm">
+    <button class="small-btn" onclick="home()">
+Home
+    </button>
+    <h1 class="wpm-text"></h1>
+      <h3 class="wpm-text2"></h3>
+  </div>
+   <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
