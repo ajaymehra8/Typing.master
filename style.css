@@ -71,7 +71,7 @@
   }
   p{
    width:78% !important;
-
+margin:auto;
   text-align:justify;
     font-size:1.5rem;
     
@@ -95,7 +95,7 @@
   }
    .write{
   display:inherit;
-   margin-top:-470rem;
+   margin-top:-70rem;
     width:70%;
   
   }
