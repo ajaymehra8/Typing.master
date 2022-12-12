@@ -7,6 +7,7 @@
    text-align:center;
     background-color:#DADADA;
     font-family: 'Roboto', sans-serif;
+      overflow:hidden;
     
   }
   
@@ -70,7 +71,7 @@
   }
   p{
    width:78% !important;
-  margin:auto;
+
   text-align:justify;
     font-size:1.5rem;
     
